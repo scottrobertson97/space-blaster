@@ -24,7 +24,7 @@ All items should remain compatible with running via direct `index.html` open (`f
 | PWR-002 | Powerups | Big laser weapon mode | P1 | M | Backlog | `js/game/player.js`, `js/game/projectiles.js`, `js/core/constants.js` |
 | PWR-003 | Powerups | Auto-gun pickup | P1 | S | Backlog | `js/game/player.js`, `js/game/core.js` |
 | VFX-001 | Graphics | Ship propulsion thruster effect | P0 | S | Done | `js/game/player.js` |
-| VFX-002 | Graphics | Foreground speed particles | P1 | S | Backlog | `js/game/stars.js`, `js/game/core.js` |
+| VFX-002 | Graphics | Foreground speed particles | P1 | S | Done | `js/game/stars.js` |
 | AUD-001 | Audio | Audio mix cleanup | P0 | S | Backlog | `js/sound.js`, `index.html` |
 | AUD-002 | Audio | UI click/confirm sounds | P0 | S | Backlog | `js/sound.js`, `js/game/ui.js`, `media/` |
 | SYS-001 | Systems | High score persistence (localStorage) | P0 | S | Backlog | `js/game/core.js`, `js/game/ui.js` |
@@ -102,6 +102,9 @@ All items should remain compatible with running via direct `index.html` open (`f
 - `VFX-001` completed.
 - Added a movement-driven thruster flame rendered behind the player ship.
 - Thruster stays hidden while idle and uses a cheap pulse animation to avoid frame impact.
+- `VFX-002` completed.
+- Added a dedicated foreground particle layer on top of the base starfield.
+- Foreground particle speed now scales subtly with game difficulty progression.
 - Manual browser smoke test should still be run before release.
 
 ## Suggested Implementation Order (Remaining)
@@ -113,5 +116,4 @@ All items should remain compatible with running via direct `index.html` open (`f
 6. `PWR-002` Big laser mode
 7. `GME-002` Level progression
 8. `ENM-001` Dive bomber enemy
-9. `VFX-002` Foreground speed particles
-10. `UX-001` Settings panel
+9. `UX-001` Settings panel
