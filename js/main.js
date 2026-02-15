@@ -1,9 +1,7 @@
 'use strict'
 
-import { Game } from './game.js'
-
 function boot() {
-  const game = new Game()
+  const game = new window.SpaceBlaster.Game()
   window.addEventListener('blur', game.pauseGame)
   window.addEventListener('focus', game.resumeGame)
 
